@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;   
+    }   
+    .container{width: 100%; height: 650px;}
+    .infomation{float: right; width: 20%; height: 560px; border: 1px solid white;}
+    .game{width: 80%;}
+    /* .menu{width: 100%; height: 50%; border: 1px solid white; text-align: center;} */
+    .score{width: 100%; height: auto; border-top:1px double white; text-align: center;}
+    .btn{height: 100%; font-weight: bold; line-height: 20px;}
+    #canvas{border: 1px solid white; float: left; width: 100%; background-color: black;}
+    
+    .button-group {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .button-group button {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: #333;
+        color: yellow;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        outline: none;
+    }
+    .button-group button:hover, .button-group button.active {
+        background-color: yellow;
+        color: black;
+    }
+    .title {
+        font-size: 2.5em;
+        color: red;
+        margin-bottom: 20px;
+    }
+            /* 모달 스타일 */
+    .modal-content {
+        background-color: black;
+        color: white;
+        border: 2px solid yellow;
+        border-radius: 15px;
+        text-align: center;
+    }
+    .modal-header {
+        border-bottom: none;
+    }
+    .modal-title {
+        font-size: 2em;
+        color: red;
+    }
+    .modal-body button {
+        margin: 10px 0;
+        width: 100%;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: #333;
+        color: yellow;
+        border: 2px solid yellow;
+        border-radius: 10px;
+        outline: none;
+    }
+    .modal-body button:hover {
+        background-color: yellow;
+        color: black;
+    }

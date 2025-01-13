@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+}
+tr{
+    background-color: black;
+}
+.container {
+    text-align: center;
+}
+.title {
+    font-size: 2.5em;
+    color: red;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-size: 1.5em;
+    color: yellow;
+    margin-bottom: 20px;
+}
+.btn-group-vertical {
+    margin-top: 30px;
+}
+.btn-group-vertical button {
+    margin: 10px;
+    width: 200px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+}
+.btn-group-vertical button:hover {
+    background-color: yellow;
+    color: black;
+}
+.modal{ background-color: black;}
+.modal-content {
+    background-color: black;
+    color: white;
+    border: 2px solid yellow;
+    border-radius: 15px;
+    text-align: center;
+}
+.modal-header {
+    text-align: center;
+    border-bottom: none;
+}
+.modal-title {
+    font-size: 2em;
+    color: red;
+}
+.modal-body button {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #333;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    outline: none;
+}
+.modal-body button:hover {
+    background-color: yellow;
+    color: black;
+}
