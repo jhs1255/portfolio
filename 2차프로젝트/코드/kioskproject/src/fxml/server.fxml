@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.servercontroller">
+   <center>
+      <TextArea fx:id="textArea" prefHeight="350.0" prefWidth="350.0" BorderPane.alignment="CENTER" />
+   </center>
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="350.0" style="-fx-font-size: 24;" text="키오스크 서버" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <ToggleButton fx:id="runBtn" mnemonicParsing="false" prefHeight="50.0" prefWidth="350.0" style="-fx-font-size: 24;" text="서버열기" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

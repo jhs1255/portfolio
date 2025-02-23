@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationPhoneController">
+    <children>
+
+        <Button layoutX="59.0" layoutY="110.0" onAction="#handleTicketSearchAction" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25; -fx-font-family: 'Malgun Gothic'" text="예매 번호로 조회">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+        <Button layoutX="385.0" layoutY="110.0" prefHeight="50.0" prefWidth="210.0" style="-fx-background-radius: 25;-fx-background-color: FF5A5A; -fx-font-family: 'Malgun Gothic'" text="휴대폰 번호로 조회" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+
+        <!-- 숫자 버튼: onAction으로 handleNumberClick 연결 -->
+        <GridPane hgap="10" layoutX="148.0" layoutY="325.0" prefHeight="230.0" prefWidth="357.0" vgap="10">
+            <children>
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="1" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="2" GridPane.columnIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="3" GridPane.columnIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="4" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="7" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="지우기" GridPane.rowIndex="3" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button onAction="#handleNumberClick" prefHeight="50.0" prefWidth="110.0" style="-fx-background-radius: 15;" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <!-- 티켓 조회 버튼 -->
+        <Button fx:id="searchButton" layoutX="229.0" layoutY="588.0" onAction="#handleReservationListAction" prefHeight="52.0" prefWidth="192.0" style="-fx-background-radius: 25;-fx-background-color: FF5A5A; -fx-font-family: 'Malgun Gothic'" text="티켓 조회" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="80.0" layoutY="670.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0" />
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0" />
+
+        <!-- 휴대폰 번호 입력 필드 -->
+        <TextField fx:id="phoneField" alignment="CENTER" layoutX="161.0" layoutY="259.0" onMouseClicked="#clearPlaceholderPhone" prefHeight="33.0" prefWidth="329.0" style="-fx-font-size: 14px; -fx-font-family: 'Malgun Gothic'" text="휴대폰 번호 : 010-XXXX-XXXX" />
+
+        <!-- 라벨, 라인 및 기타 텍스트 -->
+        <Label layoutX="225.0" layoutY="25.0" prefHeight="30.0" prefWidth="210.0" style="-fx-font-size: 23px; -fx-font-weight: bold;" text="예매 내역 출력 화면" textFill="WHITE" />
+        <Line endX="174.0" layoutX="318.0" layoutY="298.0" startX="-155.33331298828125" stroke="#a6a6a6" />
+        <!-- 홈 버튼 -->
+        <Button layoutX="584.0" layoutY="23.0" onAction="#handleHomeButtonAction" prefHeight="37.0" prefWidth="39.0" style="-fx-background-color: transparent; -fx-border-color: transparent;" />
+        <Text layoutX="197.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="휴대폰 번호를 입력해 주세요." textAlignment="CENTER" wrappingWidth="265.3333740234376" style = "-fx-font-family: 'Malgun Gothic'">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+        <Text layoutX="92.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="비회원으로 예매한 고객님은 예매번호로 조회해 주세요." textAlignment="CENTER" wrappingWidth="470.6667480468751" style = "-fx-font-family: 'Malgun Gothic'">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+		        <ImageView fitHeight="37.0" fitWidth="39.0" layoutX="584.0" layoutY="23.0" preserveRatio="true">
+		            <image>
+		                <Image url="@icon/home.png" />
+		            </image>
+		        </ImageView>
+    </children>
+</AnchorPane>

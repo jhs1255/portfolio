@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane prefHeight="620.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.app.view.RefundNumberController">
+    <children>
+        <Button layoutX="31.0" layoutY="79.0" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 15; -fx-background-color: FF5A5A;" text="예매 번호로 조회" textFill="WHITE" />
+        <Button layoutX="209.0" layoutY="79.0" onAction="#handlePhoneSearchAction" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 15;" text="휴대폰 번호로 조회" />
+
+        <!-- 숫자 버튼: onAction으로 handleNumberClick 연결 -->
+        <GridPane hgap="10" layoutX="76.0" layoutY="266.0" vgap="10">
+            <children>
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="1" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="2" GridPane.columnIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="3" GridPane.columnIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="4" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="7" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="지우기" GridPane.rowIndex="3" />
+                <Button onAction="#handleNumberClick" prefHeight="40.0" prefWidth="70.0" style="-fx-background-radius: 15;" text="X" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            </children>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+
+        <!-- 티켓 조회 버튼 (fx:id 추가) -->
+        <Button fx:id="searchButton" layoutX="110.0" layoutY="485.0" onAction="#handleTicketSearchAction" prefHeight="40.0" prefWidth="160.0" style="-fx-background-radius: 15;-fx-background-color: FF5A5A;" text="티켓 조회" textFill="WHITE" />
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+
+        <!-- 휴대폰 번호 입력 필드 -->
+        <TextField fx:id="phoneField" alignment="CENTER" layoutX="84.0" layoutY="208.0" onMouseClicked="#clearPlaceholderPhone" prefHeight="23.0" prefWidth="215.0" style="-fx-font-size: 14px;" text="숫자 15자리 입력" />
+
+        <!-- 라벨, 라인 및 기타 텍스트 -->
+        <Label layoutX="87.0" layoutY="15.0" prefHeight="30.0" prefWidth="209.0" style="-fx-font-size: 16px; -fx-font-weight: bold;" text="[환불] 예매 내역 출력 화면" textFill="WHITE" />
+        <Line endX="109.33331298828125" layoutX="193.0" layoutY="236.0" startX="-110.66668701171875" stroke="#a6a6a6" />
+        
+		<!-- 홈 버튼 -->
+		<Button layoutX="313.0" layoutY="7.0" onAction="#handleHomeButtonAction" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+		    <graphic>
+		        <ImageView fitHeight="37.0" fitWidth="39.0" preserveRatio="true">
+		            <image>
+		                <Image url="@/com/exam/app/view/images/home.png" />
+		            </image>
+		        </ImageView>
+		    </graphic>
+		</Button>
+
+        <Text layoutX="77.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="예매 번호를 입력해 주세요." textAlignment="CENTER" wrappingWidth="230.0000000000001" />
+      <Text layoutX="77.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="예매 번호는 숫자 15자리 입니다." textAlignment="CENTER" wrappingWidth="230.0000000000001" />
+    </children>
+</AnchorPane>

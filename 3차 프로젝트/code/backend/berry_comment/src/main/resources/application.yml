@@ -1,0 +1,89 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: berrecommended
+    password: fnvk qgzy bryk sjrm
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  datasource-data:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/berrecommend?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: admin
+    password: qwer1234!@#$
+
+  datasource-meta:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/berrecommend_meta?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: admin
+    password: qwer1234!@#$
+
+  #배치 자동 실행 방지
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+      schema: classpath:org/springframework/batch/core/schema-mysql.sql
+  application:
+    name: berry_comment
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 29114570197-d3qsblq1t7du195b9dd70t3ravdtdo4e.apps.googleusercontent.com
+            client-secret: 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
+            scope:
+              - email
+              - profile
+            redirect-uri: http://localhost:8080/login/oauth2/code/google
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
+jwt:
+  issuer: wjdehdwn2475@naver.com
+  secret-key: tG8+zV37J3xxVvlXmNzRt3N5Cvrl9KQsnb6RXlOVHzg=
+
+password:
+  secret-key: k9hRZxvPLu+DMIjFnZ4ynQeFYVG9ZDUph5ZbY3UOvAs=
+
+
+
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
+
+#lastfm Api 키
+lastFm:
+  api-key: 2874744429cca3473363099544497bfb
+  api-secret: fe0b79217fe2245cbf14e08076382d9f
+
+#카카오 페이 결제 관련 설정
+kakaoPay:
+  secret-key: DEVB68F60A1BA8202A3C677E9FB4D5799924DBF8
+  cid: TC0ONETIME
+  cost: 9900
+  #상품명
+  item-name: BerryComment
+  #상품수량
+  quantity: 1
+  #상품 비과세 금액
+  tax-free-amount: 0
+  #결제 성공시 redirect-url
+  approve-url: http://localhost:8080/payment/success
+  #실패시 redirect-url
+  fail-url: http://localhost:8080/payment/failed
+  cancel-url: http://localhost:8080/payment/cancel
+
+expire-day: 30

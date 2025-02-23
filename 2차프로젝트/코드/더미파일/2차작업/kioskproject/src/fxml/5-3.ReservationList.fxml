@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="620.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationListController">
+    <children>
+
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+
+        <!-- 상단 타이틀 -->
+        <Label layoutX="109.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="예매 내역 확인 화면" textFill="WHITE" />
+
+		<!-- 홈 버튼 -->
+		<Button layoutX="313.0" layoutY="7.0" onAction="#handleHomeButtonAction" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+		    <graphic>
+		        <ImageView fitHeight="37.0" fitWidth="39.0" preserveRatio="true">
+		            <image>
+		                <Image url="@icon/home.png" />
+		            </image>
+		        </ImageView>
+		    </graphic>
+		</Button>
+
+        <!-- 예매 내역 목록을 담는 VBox -->
+        <VBox fx:id="reservationListContainer" layoutX="20.0" layoutY="60.0" prefWidth="340.0" spacing="20.0">
+            <!-- 여기서부터 예매 항목들이 동적으로 추가됨 -->
+        </VBox>
+
+		<!-- 출력 버튼 (초기 비활성화) -->
+		<Button fx:id="printButton" disable="true" layoutX="135.0" layoutY="486.0" onAction="#handlePrintButtonAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-radius: 15; -fx-background-color: #ff5a5a;" text="출  력" textFill="WHITE">
+		    <font>
+		        <Font size="20.0" />
+		    </font>
+		</Button>
+
+
+        <!-- 예매 내역 항목 (AnchorPane 클릭 시 출력 버튼 활성화) -->
+        <AnchorPane fx:id="reservationItem" layoutX="18.0" layoutY="88.0" onMouseClicked="#handleReservationItemClick" prefHeight="171.0" prefWidth="340.0">
+            <children>
+                <Rectangle fx:id="reservationBorder" arcHeight="5.0" arcWidth="5.0" fill="#f9fcff" height="173.0" layoutX="2.0" layoutY="-1.0" stroke="#b7b7b7" strokeType="INSIDE" width="340.0" />
+                <ImageView fitHeight="136.0" fitWidth="109.0" layoutX="16.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@image/movie.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="rating" layoutX="141.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[12]" wrappingWidth="28.6666259765625" />
+                <Text fx:id="movieTitle" layoutX="166.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="마루는 강쥐" wrappingWidth="146.66661071777344" />
+                <Text fx:id="movieType" layoutX="245.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(2D)" wrappingWidth="28.6666259765625" />
+                <Text fx:id="runTime" layoutX="274.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="90분" wrappingWidth="28.6666259765625" />
+                <Text fx:id="movieTime" layoutX="208.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:30 ~ 14:00" wrappingWidth="95.33329772949219" />
+                <Text fx:id="movieDate" layoutX="141.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024.09.01" wrappingWidth="66.66661071777344" />
+                <Text fx:id="section" layoutX="142.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A관(3층)" wrappingWidth="54.66661071777344" />
+                <Text fx:id="seats" layoutX="197.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G7, G8, G9" wrappingWidth="131.33323669433594" />
+                <Text fx:id="Details" layoutX="142.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="일반 3명" wrappingWidth="54.66661071777344" />
+                <Text layoutX="141.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="예매 번호 : " wrappingWidth="66.66661071777344" />
+                <Text fx:id="resNum" layoutX="205.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13987114398710985" wrappingWidth="121.99998474121094" />
+            </children>
+        </AnchorPane>
+
+    </children>
+</AnchorPane>

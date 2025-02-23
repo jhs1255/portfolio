@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane fx:id="rootPane" prefHeight="620.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.app.view.RefundListController">
+    <children>
+    
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" layoutY="560.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+        <Rectangle arcHeight="10.0" fill="#ff5a5a" height="60.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="380.0" />
+    
+        <!-- 상단 타이틀 -->
+        <Label layoutX="81.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="[환불] 예매 내역 확인 화면" textFill="WHITE" />
+
+		<!-- 홈 버튼 -->
+		<Button layoutX="313.0" layoutY="7.0" onAction="#handleHomeButtonAction" prefHeight="40.0" prefWidth="59.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+		    <graphic>
+		        <ImageView fitHeight="37.0" fitWidth="39.0" preserveRatio="true">
+		            <image>
+		                <Image url="@/com/exam/app/view/images/home.png" />
+		            </image>
+		        </ImageView>
+		    </graphic>
+		</Button>
+
+        <!-- 예매 내역 목록을 담는 VBox -->
+        <VBox fx:id="reservationListContainer" layoutX="20.0" layoutY="60.0" prefWidth="340.0" spacing="20.0">
+            <!-- 예매 내역 아이템 -->
+            <AnchorPane layoutX="18.0" layoutY="88.0" onMouseClicked="#handleReservationClick" prefHeight="171.0" prefWidth="340.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f9fcff" height="173.0" layoutX="1.0" layoutY="22.0" stroke="#b7b7b7" strokeType="INSIDE" width="340.0" />
+                  <ImageView fitHeight="136.0" fitWidth="109.0" layoutX="14.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../../../키오스크%20image/movie1.png" />
+                     </image>
+                  </ImageView>
+                  <Text layoutX="141.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[12]" wrappingWidth="28.6666259765625" />
+                  <Text layoutX="166.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="마루는 강쥐" wrappingWidth="146.66661071777344" />
+                  <Text layoutX="245.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(2D)" wrappingWidth="28.6666259765625" />
+                  <Text layoutX="274.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="90분" wrappingWidth="28.6666259765625" />
+                  <Text layoutX="208.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12:30 ~ 14:00" wrappingWidth="95.33329772949219" />
+                  <Text layoutX="141.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2024.09.01" wrappingWidth="66.66661071777344" />
+                  <Text layoutX="142.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A관(3층)" wrappingWidth="54.66661071777344" />
+                  <Text layoutX="197.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="G7, G8, G9" wrappingWidth="131.33323669433594" />
+                  <Text layoutX="142.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="일반 3명" wrappingWidth="54.66661071777344" />
+                  <Text layoutX="141.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="예매 번호 : " wrappingWidth="66.66661071777344" />
+                  <Text layoutX="205.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13987114398710985" wrappingWidth="121.99998474121094" />
+               </children>
+            </AnchorPane>
+        </VBox>
+
+        <!-- 환불 버튼 (기본 비활성화) -->
+        <Button fx:id="printButton" disable="true" layoutX="135.0" layoutY="486.0" onAction="#handleRefundButtonAction" prefHeight="40.0" prefWidth="109.0" style="-fx-background-radius: 15; -fx-background-color: #ff5a5a;" text="환  불" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+
+    </children>
+</AnchorPane>

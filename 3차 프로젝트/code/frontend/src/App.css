@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&display=swap");
+.App {
+  text-align: center;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+}
+
+/* 스크롤바 전체 스타일 */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* 스크롤바 트랙 (배경) */
+::-webkit-scrollbar-track {
+  background: #fce7ff;
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background: #7e3cab;
+  border-radius: 10px;
+}
+
+/* 스크롤바 핸들 호버 효과 */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d1b7b;
+}

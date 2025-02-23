@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="750.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationListController">
+   <BorderPane prefHeight="200.0" prefWidth="200.0">
+      <center>
+      <AnchorPane prefHeight="590.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+          <children>
+      
+                    <!-- 예매 내역 목록을 담는 VBox -->
+              <VBox fx:id="reservationListContainer" layoutY="170.0" prefWidth="650.0" spacing="20.0">
+            <!-- 여기서부터 예매 항목들이 동적으로 추가됨 -->
+        </VBox>
+      
+                                                                  		<!-- 출력 버튼 (초기 비활성화) -->
+      		<Button fx:id="printButton" disable="true" layoutX="232.0" layoutY="511.0" onAction="#handlePrintButtonAction" prefHeight="56.0" prefWidth="166.0" style="-fx-background-radius: 15; -fx-font-size: 25; -fx-background-color: #ff5a5a;" text="출  력" textFill="WHITE">
+      		    <font>
+      		        <Font size="20.0" />
+      		    </font>
+      		</Button>
+               <ScrollPane prefHeight="500.0" prefWidth="650.0">
+                  <content>
+            
+                              
+                                      <!-- 예매 내역 항목 (AnchorPane 클릭 시 출력 버튼 활성화) -->
+                    <AnchorPane fx:id="reservationItem" onMouseClicked="#handleReservationItemClick" prefHeight="500.0" prefWidth="650.0">
+                        <children>
+                            <Rectangle fx:id="reservationBorder" arcHeight="5.0" arcWidth="5.0" fill="#f9fcff" height="173.0" layoutX="2.0" layoutY="-1.0" stroke="#b7b7b7" strokeType="INSIDE" width="650.0" />
+                            <ImageView fitHeight="150.0" fitWidth="109.0" layoutX="16.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@image/movie.png" />
+                                </image>
+                            </ImageView>
+                            <Text fx:id="rating" layoutX="139.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="[12]" wrappingWidth="39.06658935546875" />
+                            <Text fx:id="movieTitle" layoutX="193.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="마루는 강쥐" wrappingWidth="146.66661071777344" />
+                            <Text fx:id="movieType" layoutX="340.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="(2D)" wrappingWidth="28.6666259765625" />
+                            <Text fx:id="runTime" layoutX="375.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="90분" wrappingWidth="71.86663818359375" />
+                            <Text fx:id="movieTime" layoutX="213.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="12:30 ~ 14:00" wrappingWidth="176.13328552246094" />
+                            <Text fx:id="movieDate" layoutX="141.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="2024.09.01" wrappingWidth="66.66661071777344" />
+                            <Text fx:id="section" layoutX="143.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="A관(3층)" wrappingWidth="99.46659851074219" />
+                            <Text fx:id="seats" layoutX="261.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="G7, G8, G9" wrappingWidth="131.33323669433594" />
+                            <Text fx:id="Details" layoutX="139.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="일반 3명" wrappingWidth="269.86663818359375" />
+                            <Text layoutX="134.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="예매 번호 : " wrappingWidth="79.46659851074219" />
+                            <Text fx:id="resNum" layoutX="210.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 14;" text="13987114398710985" wrappingWidth="143.59996032714844" />
+                        </children>
+                    </AnchorPane>
+                  </content>
+               </ScrollPane>
+      
+          </children>
+      </AnchorPane>
+      </center>
+      <top>
+         <HBox alignment="CENTER_RIGHT" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #ff5a5a;" BorderPane.alignment="CENTER">
+            <children>
+      
+              <!-- 상단 타이틀 -->
+              <Label prefWidth="210.0" style="-fx-font-size: 23; -fx-font-weight: bold;" text="예매 내역 확인 화면" textFill="WHITE">
+                  <HBox.margin>
+                     <Insets right="130.0" />
+                  </HBox.margin>
+               </Label>
+      
+      		<!-- 홈 버튼 -->
+      		<Button onAction="#handleHomeButtonAction" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+      		    <graphic>
+      		        <ImageView fitHeight="50.0" fitWidth="50.0" preserveRatio="true">
+      		            <image>
+      		                <Image url="@icon/home.png" />
+      		            </image>
+      		        </ImageView>
+      		    </graphic>
+                  <HBox.margin>
+                     <Insets right="10.0" top="5.0" />
+                  </HBox.margin>
+      		</Button>
+            </children>
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin>
+         </HBox>
+      </top>
+      <bottom>
+         <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #ff5a5a;" BorderPane.alignment="CENTER" />
+      </bottom>
+   </BorderPane>
+</StackPane>

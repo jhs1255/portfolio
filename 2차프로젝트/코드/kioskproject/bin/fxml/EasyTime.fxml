@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="EasyTimePane" prefHeight="750.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EasyTime">
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="650.0">
+         <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="80.0" prefWidth="650.0" style="-fx-background-color: #ff6532;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="home" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: none;">
+               <HBox.margin>
+                  <Insets right="10.0" top="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: #ff6532;" BorderPane.alignment="CENTER" />
+   </bottom>
+         <center>
+      <AnchorPane prefHeight="590.0" prefWidth="650.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="1.0" layoutY="82.0" prefWidth="650.0" spacing="20.0" />
+                  <ScrollPane layoutX="35.0" layoutY="168.0" prefHeight="408.0" prefWidth="580.0" style="-fx-background-color: white;">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="650.0">
+                           <children>
+                              <VBox fx:id="movieList" alignment="TOP_CENTER" prefWidth="650.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <Button fx:id="backBtn" layoutX="35.0" layoutY="27.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: #ff6532; -fx-background-radius: 30; -fx-font-size: 20; -fx-text-fill: white; -fx-font-family: B Batangcheatang;" text="이전으로" />
+            <Button fx:id="nextPage" layoutX="225.0" layoutY="497.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 24; -fx-text-fill: white; -fx-font-family: 'Malgun Gothic'; -fx-background-color: #ff6532; -fx-background-radius: 30;" text="다음으로" />
+                  <Label fx:id="MovieInfo" layoutX="33.0" layoutY="94.0" prefHeight="37.0" prefWidth="292.0" style="-fx-font-size: 30;" text="Movie Name" />
+                  <Label layoutX="325.0" layoutY="94.0" prefHeight="37.0" prefWidth="291.0" style="-fx-font-size: 30;" text="시간을 선택해주세요" />
+         </children>
+      </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

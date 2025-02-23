@@ -1,0 +1,10 @@
+drop database if exists berrecommend;
+CREATE DATABASE berrecommend;
+DROP USER IF EXISTS 'admin'@'%';
+CREATE USER 'admin'@'%' IDENTIFIED BY 'qwer1234!@#$';
+GRANT ALL PRIVILEGES ON berrecommend.* TO 'admin'@'%';
+FLUSH PRIVILEGES;
+drop database if exists berrecommend_meta;
+CREATE DATABASE berrecommend_meta;
+GRANT ALL PRIVILEGES ON berrecommend_meta.* TO 'admin'@'%';
+FLUSH PRIVILEGES;

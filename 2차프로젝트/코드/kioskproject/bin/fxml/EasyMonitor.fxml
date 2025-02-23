@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="mainpane" prefHeight="750.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.kioskEasyMonitor">
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="650.0">
+         <top>
+            <HBox alignment="TOP_RIGHT" prefHeight="80.0" prefWidth="650.0" style="-fx-background-color: #ff6532;" BorderPane.alignment="CENTER">
+               <children>
+                  <MenuButton mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: none;">
+                    <items>
+                      <MenuItem fx:id="admin" mnemonicParsing="false" text="관리자접속" />
+                      <MenuItem fx:id="unconnect" mnemonicParsing="false" text="해제" />
+                    </items>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </MenuButton>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="80.0" prefWidth="650.0" style="-fx-background-color: #ff6532;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="162.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 32; -fx-font-family: Gothic;" text="무엇을 하고 싶으세요?" textAlignment="CENTER" />
+                  <Button fx:id="BackBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="232.0" layoutY="145.0" mnemonicParsing="false" style="-fx-font-size: 24; -fx-font-family: 'Malgun Gothic'; -fx-text-fill: black; -fx-border-radius: 30; -fx-border-color: black; -fx-background-color: white; -fx-background-radius: 30;" text="홈 화면으로" textAlignment="CENTER" />
+                  <HBox alignment="CENTER" layoutY="240.0" prefHeight="240.0" prefWidth="650.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="buyTicket" mnemonicParsing="false" prefHeight="240.0" prefWidth="170.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-radius: 20;">
+                           <graphic>
+                              <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="230.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="120.0" layoutX="16.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon/buy.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="26.0" layoutY="160.0" style="-fx-font-size: 26; -fx-font-family: 'Malgun Gothic';" text="티켓구매" />
+                                 </children>
+                              </AnchorPane>
+                           </graphic></Button>
+                        <Button fx:id="printTicket" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="240.0" prefWidth="180.0" style="-fx-background-color: white; -fx-border-color: black; -fx-border-radius: 20;">
+                           <graphic>
+                              <AnchorPane prefHeight="230.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="31.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon/print.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="3.0" layoutY="160.0" style="-fx-font-size: 26; -fx-font-family: 'Malgun Gothic';" text="예매내역출력" />
+                                 </children>
+                              </AnchorPane>
+                           </graphic></Button>
+                        <Button fx:id="cancelTicket" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="240.0" prefWidth="180.0" style="-fx-border-color: black; -fx-border-radius: 20; -fx-background-color: white;">
+                           <graphic>
+                              <AnchorPane prefHeight="230.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fitHeight="120.0" fitWidth="120.0" layoutX="21.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@icon/cancel.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="29.0" layoutY="160.0" style="-fx-font-size: 26; -fx-font-family: 'Malgun Gothic';" text="취소하기" />
+                                 </children>
+                              </AnchorPane>
+                           </graphic></Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

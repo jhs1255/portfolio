@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="EasyDateStackPane" prefHeight="750.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EasyDate">
+   <stylesheets>
+       <URL value="@choiseMovie.css" />
+   </stylesheets>
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="650.0">
+         <top>
+            <HBox alignment="TOP_RIGHT" prefHeight="90.0" prefWidth="650.0" style="-fx-background-color: FF5A5A;" BorderPane.alignment="CENTER">
+               <children>
+               
+               <!-- 도움 버튼을 왼쪽에 추가 -->
+                  <Button fx:id="help" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: none;" />
+               
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="589.0" spacing="30.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/help.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="500.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button fx:id="EasyDateHomeBtn" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="70.0" prefWidth="80.0" style="-fx-background-color: none; -fx-background-radius: 10; -fx-border-radius: 10; -fx-border-color: none;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="13.0" top="12.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@icon/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="80.0" prefWidth="650.0" style="-fx-background-color: FF5A5A;" BorderPane.alignment="CENTER" />
+         </bottom>
+         <left>
+            <AnchorPane prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Text layoutX="260.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-family: 'Malgun Gothic';" text="오늘 날짜" textAlignment="CENTER" />
+                  <Button fx:id="EasyDateBackBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="24.0" layoutY="27.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: FF5A5A; -fx-text-fill: white; -fx-background-radius: 30; -fx-font-size: 20; -fx-font-family: 'Malgun Gothic'; -fx-border-radius: 25;" text="이전으로" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font></Button>
+                  <Text fx:id="EasyDateToday" layoutX="184.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 30; -fx-font-family: 'Malgun Gothic';" text="2024년 09월06일(금)" textAlignment="CENTER" />
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="241.0" prefHeight="150.0">
+                     <children>
+                        <Button fx:id="EasyDateBtn1" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn2" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn3" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn4" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn5" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn6" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                        <Button fx:id="EasyDateBtn7" mnemonicParsing="false" prefHeight="130.0" prefWidth="90.0" style="-fx-border-color: #ccc; -fx-font-family: 'Malgun Gothic';" styleClass="DateBtn" text="Button" />
+                     </children>
+                  </HBox>
+                  <Button fx:id="EasyDateNextBtn" layoutX="247.0" layoutY="469.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="155.0" style="-fx-background-radius: 25; -fx-background-color: FF5A5A; -fx-text-fill: white; -fx-font-family: 'Malgun Gothic';" text="다   음">
+                     <font>
+                        <Font size="22.0" />
+                     </font></Button>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e4e4e4" height="3.0" layoutY="168.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="650.0" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

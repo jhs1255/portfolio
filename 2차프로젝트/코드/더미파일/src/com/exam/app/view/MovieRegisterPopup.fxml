@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane prefHeight="360.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exam.app.view.RegisterController">
+   <children>
+      <GridPane layoutX="25.0" layoutY="105.0" prefHeight="120.0" prefWidth="200.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="제목">
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="titleField" editable="false" GridPane.columnIndex="1" /> <!-- 제목을 읽기 전용으로 설정 -->
+            <Label text="상영등급" GridPane.rowIndex="2">
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <Label text="러닝타임" GridPane.rowIndex="1">
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <TextField fx:id="runtimeField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="ratingField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="상영종류" GridPane.rowIndex="3">
+               <padding>
+                  <Insets left="25.0" />
+               </padding>
+            </Label>
+            <ComboBox fx:id="kindComboBox" prefHeight="28.0" prefWidth="102.0" promptText="2D" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Button fx:id="submitButton" layoutX="91.0" layoutY="243.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" text="등록 완료" />
+   </children>
+</AnchorPane>

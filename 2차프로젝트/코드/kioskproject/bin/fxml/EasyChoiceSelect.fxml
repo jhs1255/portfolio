@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane fx:id="EasyChoiceSelectPane" prefHeight="750.0" prefWidth="650.0" stylesheets="@choiceMovie.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EasyChoiceSelect">
+   <children>
+      <BorderPane prefHeight="750.0" prefWidth="650.0">
+         <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="80.0" prefWidth="650.0" style="-fx-background-color: FF5A5A;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icon/help.png" />
+               </image>
+                     <HBox.margin>
+                        <Insets right="420.0" top="16.0" />
+                     </HBox.margin>
+            </ImageView>
+         
+            <!-- 도움 버튼 -->
+            <Button fx:id="help" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: none;">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         
+            <Button fx:id="home" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: none;">
+               <HBox.margin>
+                  <Insets right="10.0" top="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icon/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color: FF5A5A;" BorderPane.alignment="CENTER" />
+   </bottom>
+         <center>
+      <AnchorPane prefHeight="590.0" prefWidth="650.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" layoutX="1.0" layoutY="82.0" prefWidth="650.0" spacing="20.0" />
+                  <Button fx:id="backBtn" layoutX="35.0" layoutY="27.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="152.0" style="-fx-background-color: FF5A5A; -fx-background-radius: 25; -fx-font-size: 20; -fx-text-fill: white; -fx-font-family: 'Malgun Gothic';" text="이전으로" />
+            <Button fx:id="nextPage" layoutX="225.0" layoutY="509.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" style="-fx-font-size: 24; -fx-text-fill: white; -fx-font-family: 'Malgun Gothic'; -fx-background-color: FF5A5A; -fx-background-radius: 25;" text="다음으로" />
+                  <Button fx:id="autoSelect" layoutX="114.0" layoutY="106.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="430.0" style="-fx-font-family: 'Malgun Gothic'; -fx-background-color: white; -fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 25;" text="좌석 자동 선택">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="selfSelect" alignment="CENTER" layoutX="112.0" layoutY="308.0" mnemonicParsing="false" prefHeight="170.0" prefWidth="430.0" style="-fx-font-family: 'Malgun Gothic'; -fx-background-color: white; -fx-border-color: black; -fx-border-radius: 20; -fx-background-radius: 25;" text="좌석 직접 선택">
+                     <font>
+                        <Font size="34.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="-20.0" />
+                     </padding>
+                  </Button>
+                  <Text layoutX="223.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Malgun Gothic';" text="바로 결제 화면으로 넘어갑니다.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="221.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Malgun Gothic';" text="좌석 선택 화면으로 넘어갑니다.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+         </children>
+      </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
