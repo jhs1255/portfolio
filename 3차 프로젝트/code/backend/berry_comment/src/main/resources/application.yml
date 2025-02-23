@@ -13,14 +13,14 @@ spring:
   datasource-data:
     driver-class-name: com.mysql.cj.jdbc.Driver
     jdbc-url: jdbc:mysql://localhost:3306/berrecommend?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
-    username: admin
-    password: qwer1234!@#$
+    username: # 개인 mysql username
+    password: # database 비밀번호
 
   datasource-meta:
     driver-class-name: com.mysql.cj.jdbc.Driver
     jdbc-url: jdbc:mysql://localhost:3306/berrecommend_meta?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
-    username: admin
-    password: qwer1234!@#$
+    username: # 개인 mysql username
+    password: # database 비밀번호
 
   #배치 자동 실행 방지
   batch:
@@ -36,8 +36,8 @@ spring:
       client:
         registration:
           google:
-            client-id: 29114570197-d3qsblq1t7du195b9dd70t3ravdtdo4e.apps.googleusercontent.com
-            client-secret: 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
+            client-id: # 발급받은 개인 id를 넣으시오
+            client-secret: # 발급받은 개인 secret를 넣으시오
             scope:
               - email
               - profile
@@ -66,12 +66,12 @@ password:
 
 #lastfm Api 키
 lastFm:
-  api-key: 2874744429cca3473363099544497bfb
-  api-secret: fe0b79217fe2245cbf14e08076382d9f
+  api-key: #개인 API키 필요
+  api-secret: #개인 secret 키 필요요
 
 #카카오 페이 결제 관련 설정
 kakaoPay:
-  secret-key: DEVB68F60A1BA8202A3C677E9FB4D5799924DBF8
+  secret-key: # 발급받은 개인 키 필요요
   cid: TC0ONETIME
   cost: 9900
   #상품명
