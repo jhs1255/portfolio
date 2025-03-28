@@ -1,4 +1,4 @@
-## 프로젝트 산출물
+## KDT 프로젝트 산출물
 
 ### [KDT 1차 프로젝트 벽돌깨기 게임 만들기](https://github.com/jhs1255/portfolio/blob/8cd7b3ad1407e9c07f7ce55bd6b81362fadd33ec/1%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/1%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8.md)
 
