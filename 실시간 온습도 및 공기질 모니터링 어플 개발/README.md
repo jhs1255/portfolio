@@ -57,3 +57,8 @@
     <p align="left">
         <img src = "./img/net.png", height="400px", width="500px">
     </p>
+
+    BLE 통신 구조
+    <p align="left">
+        <img src = "./img/BLE.png", height="350px", width="500px">
+    </p>
