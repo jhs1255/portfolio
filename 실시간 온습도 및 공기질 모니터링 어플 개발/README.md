@@ -74,3 +74,8 @@
     <p align="left">
         <img src = "./img/BLE_connect.png", height="300px", width="500px">
     </p>
+
+    리모컨 컨트롤 화면
+    <p align="left">
+        <img src = "./img/remote.png", height="300px", width="500px">
+    </p>
