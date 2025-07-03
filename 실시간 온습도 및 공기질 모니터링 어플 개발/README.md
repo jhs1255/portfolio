@@ -52,3 +52,8 @@
     <p align="left">
         <img src = "./img/flutter_struct.png", height="700px", width="500px">
     </p>
+
+    네트워크 통신 구조
+    <p align="left">
+        <img src = "./img/net.png", height="400px", width="500px">
+    </p>
