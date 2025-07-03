@@ -62,3 +62,10 @@
     <p align="left">
         <img src = "./img/BLE.png", height="350px", width="500px">
     </p>
+
+* 결과물
+
+    flutter 초기 화면
+    <p align="left">
+        <img src = "./img/flutter_start.png", height="300px", width="500px">
+    </p>
