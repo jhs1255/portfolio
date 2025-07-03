@@ -50,5 +50,5 @@
 
     프로젝트 flutter 구조
     <p align="left">
-        <img src = "./img/flutter_struct.png", height="300px", width="500px">
+        <img src = "./img/flutter_struct.png", height="700px", width="500px">
     </p>
