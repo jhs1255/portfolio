@@ -69,3 +69,8 @@
     <p align="left">
         <img src = "./img/flutter_start.png", height="300px", width="500px">
     </p>
+
+    BlueTooth 연결 및 리모컨 화면
+    <p align="left">
+        <img src = "./img/BLE_connect.png", height="300px", width="500px">
+    </p>
