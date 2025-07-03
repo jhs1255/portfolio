@@ -79,3 +79,8 @@
     <p align="left">
         <img src = "./img/remote.png", height="300px", width="500px">
     </p>
+
+    센서 실행 후 데이터 출력화면
+    <p align="left">
+        <img src = "./img/data.png", height="300px", width="500px">
+    </p>
