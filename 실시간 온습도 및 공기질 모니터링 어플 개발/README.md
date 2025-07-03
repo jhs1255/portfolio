@@ -39,3 +39,16 @@
         \- RestAPI를 활용한 서버 제작 및 라즈베리파이와 웹소켓통신 구현<br>
         6. GATT서버 개발<br>
         \- 라즈베리파이가 다른기기에서 연결을 할 수 있도록 광고를 시작하고 read,write,notify를 할 수 있는 서버 구현
+
+* 프로젝트 내용
+
+    사용 기술
+    > 프로그래밍 도구 : AndroidStudio, inteliJ, Ubuntu-22.04LTS<br>
+    > 하드웨어 : Raspberry 4B+, AduioUno, PMS7003(미세먼지 모듈), HC\-06(블루투스 모듈),DHT11(온습도 모듈), SwitchBot<br>
+    > 사용 언어 : java, dart, python <br>
+    > 사용 프레임워크 : SpringBoot, Flutter
+
+    프로젝트 flutter 구조
+    <p align="left">
+        <img src = "./img/flutter_struct.png", height="300px", width="500px">
+    </p>
