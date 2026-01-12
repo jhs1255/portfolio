@@ -1,5 +1,7 @@
 ## 개인 프로젝트 산출물
 
+### [개인 프로젝트 - 파이썬을 활용한 RAW드라이브 파일 복구 프로그램 개발] - 개발 중
+
 ### [개인 프로젝트 - 라즈베리파이를 활용한 실시간 온습도 및 공기질 모니터링 어플 개발](https://github.com/jhs1255/portfolio/blob/main/%EC%8B%A4%EC%8B%9C%EA%B0%84%20%EC%98%A8%EC%8A%B5%EB%8F%84%20%EB%B0%8F%20%EA%B3%B5%EA%B8%B0%EC%A7%88%20%EB%AA%A8%EB%8B%88%ED%84%B0%EB%A7%81%20%EC%96%B4%ED%94%8C%20%EA%B0%9C%EB%B0%9C/README.md)
 
 ## KDT 프로젝트 산출물
