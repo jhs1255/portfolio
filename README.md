@@ -1,4 +1,4 @@
-## 개인 프로젝트 산출물
+## 개별 팀 프로젝트 산출물
 
 ### [개인 프로젝트 - 파이썬을 활용한 RAW드라이브 파일 복구 프로그램 개발](https://github.com/jhs1255/portfolio/blob/main/RAW%EB%93%9C%EB%9D%BC%EC%9D%B4%EB%B8%8C%20%ED%8C%8C%EC%9D%BC%20%EB%B3%B5%EA%B5%AC%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EA%B0%9C%EB%B0%9C/README.md) - 작성 중
 
