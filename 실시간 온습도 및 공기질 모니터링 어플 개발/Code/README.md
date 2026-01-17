@@ -5,4 +5,4 @@
 
 ### sensorcode 폴더에는 미세먼지센서, 가습기 센서, 온습도 센서, BLE통신을 위한 서버 코드가 있습니다.
 
-### server 폴더에는 springboot로 구현한 Restful API를 사용하여 구현한 서버 코드가 있습니다.
+### server 폴더에는 springboot를 사용하여 Restful 서버를 구현한 서버 코드가 있습니다.
