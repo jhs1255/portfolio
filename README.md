@@ -10,4 +10,4 @@
 
 ### [KDT 2차 프로젝트 Java GUI를 활용하여 영화관 키오스크 제작하기](https://github.com/jhs1255/portfolio/blob/main/2%EC%B0%A8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md)
 
-### [KDT 1차 프로젝트 벽돌깨기 게임 만들기](https://github.com/jhs1255/portfolio/blob/main/1%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/README.md)
+### [KDT 1차 프로젝트 벽돌깨기 게임 만들기](https://github.com/jhs1255/portfolio/tree/main/1%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
