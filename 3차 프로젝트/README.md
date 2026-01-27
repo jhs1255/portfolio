@@ -35,9 +35,9 @@
     > 사용 언어 : Java, Javascript, HTML, CSS, Python, SQL
     > 사용 프레임워크 : Spring, React
 
-    * 시연 영상
+* 시연 영상
 
-    [![Video Label](http://img.youtube.com/vi/FF8keqVIBd8/0.jpg)](https://youtu.be/FF8keqVIBd8)
+[![Video Label](http://img.youtube.com/vi/FF8keqVIBd8/0.jpg)](https://youtu.be/FF8keqVIBd8)
 
     결과물
     > 로그인 선택화면입니다.<br>
