@@ -28,13 +28,11 @@
     5. 깃허브에서의 문서 버전 관리를 통한 팀 협업 능력 향상 <br><br>
     6. 사용자 편의를 고려한 UI/UX 설계 및 반응형 웹 구현 <br>
 
-* 프로젝트 내용
-
+* 프로젝트 내용<br>
     사용기술<br>
-
-        프로그래밍 도구 : VSCode, IntelliJ, MySQL workbench, Colab
-        사용 언어 : Java, Javascript, HTML, CSS, Python, SQL
-        사용 프레임워크 : Spring, React
+    - 프로그래밍 도구 : VSCode, IntelliJ, MySQL workbench, Colab<br>
+    - 사용 언어 : Java, Javascript, HTML, CSS, Python, SQL<br>
+    - 사용 프레임워크 : Spring, React<br>
 
     시연 영상
 
