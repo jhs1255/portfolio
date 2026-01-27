@@ -33,7 +33,7 @@
     - 사용 언어 : Java, SQL, FXML
 
     결과물
-    > 결과물 입니다. <br>
+    > 최종 결과물 입니다. <br>
     <p align="left">
         <img src = "./문서/최종/kiosk.png", height="300px", width="500px">
     </p>
