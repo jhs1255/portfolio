@@ -33,14 +33,6 @@
     - 사용 언어 : Java, SQL, FXML
 
     결과물<br>
-    <figure style="text-align:left; display:inline-block;">
-        <figcaption>메인 화면</figcaption>
-        <img src = "./문서/최종/img/1main.png", height="300px", width="250px">
-    </figure>
-    <figure style="text-align:left; display:inline-block;">
-            <figcaption>관리자 로그인 화면</figcaption>
-            <img src = "./문서/최종/img/2admin_login.png", height="300px", width="250px">
-    </figure>
-    <!-- <p align="left">
-        <img src = "./문서/최종/kiosk.png", height="300px", width="500px">
-    </p> -->
+    | **메인화면** | **관리자 로그인 화면** |
+    | :------------: | :--------------: |
+    |<img src = "./문서/최종/img/1main.png" height="300px" width="250px"> | <img src = "./문서/최종/img/2admin_login.png" height="300px" width="250px">
