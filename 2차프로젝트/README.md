@@ -38,3 +38,5 @@
     |<img src = "./문서/최종/img/1main.png" height="350px" width="270px"> | <img src = "./문서/최종/img/2admin_login.png" height="350px" width="270px"> | <img src = "./문서/최종/img/3adminmenu.png" height="350px" width="270px"> |
     | **영화 등록 화면** | **상영 시간 등록 화면** | **상영 정보 관리 화면** |
     |<img src = "./문서/최종/img/4movieregister.png" height="350px" width="270px"> | <img src = "./문서/최종/img/5movieregister.png" height="350px" width="270px"> | <img src = "./문서/최종/img/6movietimeinfo.png" height="350px" width="270px"> |
+    | **상영 정보 추가/수정 화면** | **상영 정보 확인 화면** | **매출 확인 화면** |
+    |<img src = "./문서/최종/img/7timeinfo.png" height="350px" width="270px"> | <img src = "./문서/최종/img/8timeinfo.png" height="350px" width="270px"> | <img src = "./문서/최종/img/9pricecheck.png" height="350px" width="270px"> |
