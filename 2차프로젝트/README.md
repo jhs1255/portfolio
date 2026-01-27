@@ -33,6 +33,6 @@
     - 사용 언어 : Java, SQL, FXML
 
     결과물<br>
-    | **메인화면** | **관리자 로그인 화면** |
-    | :------------: | :--------------: |
-    |<img src = "./문서/최종/img/1main.png" height="300px" width="250px"> | <img src = "./문서/최종/img/2admin_login.png" height="300px" width="250px">
+    | **메인화면** | **관리자 로그인 화면** | **관리자 메뉴 화면** |
+    | :------------: | :------------: | :------------: |
+    |<img src = "./문서/최종/img/1main.png" height="350px" width="270px"> | <img src = "./문서/최종/img/2admin_login.png" height="350px" width="270px"> | <img src = "./문서/최종/img/3adminmenu.png" height="350px" width="270px"> |
