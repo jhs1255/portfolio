@@ -30,9 +30,10 @@
 
 * 프로젝트 내용
 
-    사용기술<br> 
-        프로그래밍 도구 : VSCode, IntelliJ, MySQL workbench, Colab <br>
-        사용 언어 : Java, Javascript, HTML, CSS, Python, SQL<br>
+    사용기술<br>
+
+        프로그래밍 도구 : VSCode, IntelliJ, MySQL workbench, Colab
+        사용 언어 : Java, Javascript, HTML, CSS, Python, SQL
         사용 프레임워크 : Spring, React
 
     시연 영상
