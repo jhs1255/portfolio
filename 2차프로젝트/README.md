@@ -32,8 +32,8 @@
     - 프로그래밍 도구 : Eclipse IDE, MySQL workbench <br>
     - 사용 언어 : Java, SQL, FXML
 
-    결과물
-    > 최종 결과물 입니다. <br>
+    결과물<br>
+        - 최종 결과물 입니다. <br>
     <p align="left">
         <img src = "./문서/최종/kiosk.png", height="300px", width="500px">
     </p>
