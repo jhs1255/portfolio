@@ -40,3 +40,7 @@
     |<img src = "./문서/최종/img/4movieregister.png" height="350px" width="270px"> | <img src = "./문서/최종/img/5movieregister.png" height="350px" width="270px"> | <img src = "./문서/최종/img/6movietimeinfo.png" height="350px" width="270px"> |
     | **상영 정보 추가/수정 화면** | **상영 정보 확인 화면** | **매출 확인 화면** |
     |<img src = "./문서/최종/img/7timeinfo.png" height="350px" width="270px"> | <img src = "./문서/최종/img/8timeinfo.png" height="350px" width="270px"> | <img src = "./문서/최종/img/9pricecheck.png" height="350px" width="270px"> |
+    | **관리자 로그아웃 화면** | **티켓 구매 영화 선택 화면** | **인원 선택 화면** |
+    |<img src = "./문서/최종/img/10adminlogout.png" height="350px" width="270px"> | <img src = "./문서/최종/img/11choicemovie.png" height="350px" width="270px"> | <img src = "./문서/최종/img/12choicepeople.png" height="350px" width="270px"> |
+    | **좌석 선택 화면** | **결제 화면** | **예약 확정 화면** |
+    |<img src = "./문서/최종/img/13choiceseat.png" height="350px" width="270px"> | <img src = "./문서/최종/img/14purchase.png" height="350px" width="270px"> | <img src = "./문서/최종/img/15ticketinfo.png" height="350px" width="270px"> |
