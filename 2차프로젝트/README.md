@@ -44,3 +44,11 @@
     |<img src = "./문서/최종/img/10adminlogout.png" height="350px" width="270px"> | <img src = "./문서/최종/img/11choicemovie.png" height="350px" width="270px"> | <img src = "./문서/최종/img/12choicepeople.png" height="350px" width="270px"> |
     | **좌석 선택 화면** | **결제 화면** | **예약 확정 화면** |
     |<img src = "./문서/최종/img/13choiceseat.png" height="350px" width="270px"> | <img src = "./문서/최종/img/14purchase.png" height="350px" width="270px"> | <img src = "./문서/최종/img/15ticketinfo.png" height="350px" width="270px"> |
+    | **포인트 적립 화면** | **적립 완료 화면** | **예매 내역 조회 화면** |
+    |<img src = "./문서/최종/img/16ticketphone.png" height="350px" width="270px"> | <img src = "./문서/최종/img/17ticketpoint.png" height="350px" width="270px"> | <img src = "./문서/최종/img/18ticketres.png" height="350px" width="270px"> |
+    | **예매 내역 확인 화면** | **쉬운 화면 날짜 선택** | **쉬운 화면 영화선택** |
+    |<img src = "./문서/최종/img/19ticketinformation.png" height="350px" width="270px"> | <img src = "./문서/최종/img/20simplechoice.png" height="350px" width="270px"> | <img src = "./문서/최종/img/21simplechoice2.png" height="350px" width="270px"> |
+    | **쉬운 화면 시간 선택** | **쉬운 화면 좌석 선택** |
+    |<img src="./문서/최종/img/22simple3.png" height="350px" width="270px"> | <img src="./문서/최종/img/23simplechoice4.png" height="350px" width="270px">
+    - 좌석 자동 선택인 경우 바로 결제 화면으로 이동
+    - 좌석 직접 선택인 경우 좌석 선택 화면으로 이동
