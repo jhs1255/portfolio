@@ -20,12 +20,15 @@
 
 * 프로젝트 내용
 
-    - 사용 기술<br>
-        - 프로그래밍 도구 : VSCode <br>
-        - 사용 언어: python <br>
-        - 사용 AI: chatGPT, 구글 Gemini<br><br>
+    사용 기술<br>
+    - 프로그래밍 도구 : VSCode <br>
+    - 사용 언어: python <br>
+    - 사용 AI: chatGPT, 구글 Gemini<br><br>
 
-    - 사용되는 상황
+    사용되는 상황<br>
+    | **SD카드 마운트 시 포맷하라고 뜰때** | **chkdsk 명령어로 복구가 안될 때** |
+    | :------------: | :------------: |
+    | <img src="./document/img/format.png" height="100px" width="250px"> | <img src="./document/img/chkdsk.png" height="100px" width="300px"> |
 
     시연 영상
     <br>
