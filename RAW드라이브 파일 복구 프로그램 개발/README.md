@@ -28,7 +28,7 @@
     사용되는 상황<br>
     | **SD카드 마운트 시 포맷하라고 뜰때** | **chkdsk 명령어로 복구가 안될 때** |
     | :------------: | :------------: |
-    | <img src="./document/img/format.png" height="100px" width="250px"> | <img src="./document/img/chkdsk.png" height="100px" width="300px"> |
+    | <img src="./document/img/format.png" height="150px" width="300px"> | <img src="./document/img/chkdsk.png" height="100px" width="350px"> |
 
     시연 영상
     <br>
