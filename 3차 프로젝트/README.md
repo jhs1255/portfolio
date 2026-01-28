@@ -32,11 +32,11 @@
     사용기술<br>
     - 프로그래밍 도구 : VSCode, IntelliJ, MySQL workbench, Colab<br>
     - 사용 언어 : Java, Javascript, HTML, CSS, Python, SQL<br>
-    - 사용 프레임워크 : Spring, React<br>
+    - 사용 프레임워크 : Spring, React<br><br>
 
     시연 영상
 
-    https://youtu.be/FF8keqVIBd8
+    https://youtu.be/FF8keqVIBd8<br>
 
     결과물
     > 로그인 선택화면입니다.<br>

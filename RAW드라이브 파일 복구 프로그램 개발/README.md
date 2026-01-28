@@ -20,7 +20,12 @@
 
 * 프로젝트 내용
 
-    사용 기술<br>
-    - 프로그래밍 도구 : VSCode <br>
-    - 사용 언어: python <br>
-    - 사용 AI: chatGPT, 구글 Gemini
+    - 사용 기술<br>
+        - 프로그래밍 도구 : VSCode <br>
+        - 사용 언어: python <br>
+        - 사용 AI: chatGPT, 구글 Gemini<br><br>
+
+    - 사용되는 상황
+
+    시연 영상
+    <br>
