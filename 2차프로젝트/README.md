@@ -31,6 +31,9 @@
 
     - 프로그래밍 도구 : Eclipse IDE, MySQL workbench <br>
     - 사용 언어 : Java, SQL, FXML
+ 
+    시연영상
+    https://youtu.be/k6vADrJcfII<br>
 
     결과물<br>
     | **메인 화면** | **관리자 로그인 화면** | **관리자 메뉴 화면** |
