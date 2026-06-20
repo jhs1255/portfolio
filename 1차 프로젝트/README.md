@@ -30,6 +30,9 @@
     > 사용 SW : VScode <br>
     > 사용 언어 : html, css, Javascript, jQuery
 
+    시연영상
+      - https://youtu.be/mMkR7pW6Dmk
+
     결과물
     > 메인화면 접속시 보이는 페이지 입니다. <br>
     <p align="left">
