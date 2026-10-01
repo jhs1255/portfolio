@@ -19,3 +19,7 @@
 [KDT 1차 프로젝트 벽돌깨기 게임 만들기](https://github.com/jhs1255/portfolio/tree/main/1%EC%B0%A8%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 ### 교내 팀 프로젝트 산출물
+1. KNN, K-clustering을 사용한 레시피 추천 머신러닝 모델 개발
+2. JSP를 활용한 영화 예매 페이지 제작
+3.  Unity3D를 사용한 FPS 게임 제작
+4. 아두이노를 사용하여 HX711 저울 제작 및 JSP기반 사용 설명서 홈페이지 개발
